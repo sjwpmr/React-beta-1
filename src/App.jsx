@@ -1,15 +1,17 @@
 import './App.css'
 import Header from './components/Header'
-import Nav from './components/Nav'
+import Aside from './components/Aside'
 import Main from './components/Main'
 import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="container">
+    <div className="wrap">
       <Header />
-      <Nav />
-      <Main />
+      <div className="middle">
+        <Aside />
+        <Main />
+      </div>
       <Footer />
     </div>
   )

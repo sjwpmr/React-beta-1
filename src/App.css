@@ -1,47 +1,127 @@
-.container {
-    background-color: #eee;
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap:10px
-}
-.container > *{
-    /* flex: 1; */
-    padding:20px 0;
-    color:#fff
-}
-header {
-    background-color: red;
-}
-nav{
-    background-color: skyblue;
-}
-.content {
-    padding: 0;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 200px 200px;
-    grid-template-areas: 
-        "section aside"
-        "article aside"
-    ;
-    gap:10px;
-
-}
-section {
-    grid-area: section;
-    background-color: blue;
-}
-article {
-    grid-area: article;
-    background-color: orange;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-aside {
-    grid-area: aside;
-    background-color: gray;
+body {
+  background-color: #b5e3f7;
+  font-family: 'Malgun Gothic', sans-serif;
 }
-footer {
-    background-color: rgb(255, 111, 0);
+
+.wrap {
+  max-width: 820px;
+  margin: 20px auto;
+  background-color: #8bc34a;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
+
+.section-label {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.header {
+  background-color: #e65127;
+  padding: 12px 25px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.site-name {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.header-top .section-label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-nav {
+  align-self: flex-end;
+}
+
+.nav-title {
+  color: #ffffff; 
+  font-size: 14px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  background-color: #fbd5c4;
+  padding: 8px 10px;
+}
+
+.nav-list li {
+  color: #222222;
+  font-size: 15px;
+  padding: 0 22px;
+}
+
+.nav-list li + li {
+  border-left: 1px solid #333333;
+}
+
+.middle {
+  display: flex;
+  gap: 5px;
+  min-height: 290px;
+}
+
+.aside {
+  flex: 2.3;
+  background-color: #009999;
+  padding: 18px 20px;
+}
+
+.aside-list {
+  list-style-type: square;
+  padding-left: 22px;
+  margin-top: 22px;
+  color: #111111;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.main {
+  flex: 7.7;
+  background-color: #1ba362;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #e65127;
+  padding: 12px 25px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-nav {
+  align-self: center;
+} 
