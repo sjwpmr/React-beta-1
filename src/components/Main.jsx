@@ -1,21 +1,16 @@
-import React from 'react'
-import './main.css'
+import './Main.css'
+import Section from './Section'
+
 const Main = () => {
-
-
-    const user = {
-        name: 'Alice',
-        isLogin: true
-    }
-
-    if (user.isLogin) {
-        return <button className='logout'>로그아웃</button>
-    }
-    else {
-
-        return <button className='login'>로그인</button>
-    }
+  return (
+    <main className="main-wrap">
+      <div className="left-content">
+        <Section />
+        <article className="article">Article</article>
+      </div>
+      <aside className="aside">Aside</aside>
+    </main>
+  )
 }
-
 
 export default Main

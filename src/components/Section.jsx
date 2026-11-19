@@ -1,23 +1,22 @@
-import React from 'react'
+const Section = () => {
+  const boardList = [
+    { id: 1, title: '공지사항', content: '사이트 점검 안내' },
+    { id: 2, title: '이벤트', content: '신규 가입 이벤트 진행 중' },
+    { id: 3, title: '업데이트', content: '버전 2.0 출시' }
+  ];
 
-export const Section = () => {
-
-   
-    const name='Alice'
-    const age=25
-    const numbers =[1,2,3,4]
-    const obj ={
-        city:'seoul',
-        hobby:'programing'
-    }
-    return (
-        <section>
-            <p>내 이름은 {name}입니다</p>
-            <p>내 나이는 {age} 살 입니다</p>
-            <p>숫자 배열 꺼내기 :{numbers[0]}</p>
-            <p>객체개열 꺼내기: {Object.hobby}</p>
-        </section>
-    )
+  return (
+    <section className="section">
+      <ul>
+        {boardList.map((board, i) => (
+          <li key={board.id}>
+            <h2>{i + 1}:{board.title}</h2>
+            <p>{board.content}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
 }
 
 export default Section
