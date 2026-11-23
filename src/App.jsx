@@ -2,9 +2,8 @@
 import './App.css'
 import Header from './components/Header'
 import Counter from './components/Counter'
-import Exam1 from './components/Exam1'
-import Exam2 from './components/Exam2'
-import Exam3 from './components/Exam3'
+import FocusInput from './components/Focuslnput'
+import ClickLogger from './components/ClickLogger'
 
 function App() {
   const user={
@@ -14,11 +13,10 @@ function App() {
 
   return (
     <main>
-      <Exam3/>
-      <Exam2/>
-       <Exam1 {...user}/>
+      <FocusInput/>
   <h1>hello react</h1>
    <Counter />
+   <ClickLogger/>
     </main>
   )
 }
