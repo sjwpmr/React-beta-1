@@ -1,11 +1,9 @@
-import './App.css'
-import Parent from './components/Parent'
-import Timer from './components/Timer'
-function App() {
+import React from 'react'
+
+
+const App = () => {
   return (
-    <div>
-      <Parent />
-    </div>
+    <div>App</div>
   )
 }
 
