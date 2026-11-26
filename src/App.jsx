@@ -1,11 +1,20 @@
 import './App.css'
-import Parent from './components/Parent'
-import Timer from './components/Timer'
+import UserList from './components/UserList'
+import TodoList from './components/TodoList'
+import UserDetail from './components/UserDetail'
+import DummyCart from './components/DummyCart'
+import DummyRecipes from './components/DummyRecipes'
+
 function App() {
   return (
-    <div>
-      <Parent />
-    </div>
+    <main>
+      <DummyRecipes/>
+      {/* <DummyCart/> */}
+      {/* <UserDetail/> */}
+      {/* <UserList/> */}
+      {/* <TodoList/> */}
+      
+    </main>
   )
 }
 
